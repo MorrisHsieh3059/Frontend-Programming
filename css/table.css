@@ -1,0 +1,25 @@
+table {
+  width: 50%;
+  border-collapse: collapse;
+  border: none;
+}
+
+/* 一樣的可以寫在一起 */
+th, td {
+  border-width: 1px;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+th {
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: darkblue;
+  padding: 10px;
+}
+
+td {
+  border-style: solid;
+  border-color: darkcyan;
+  padding: 5px;
+}
