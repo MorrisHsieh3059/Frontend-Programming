@@ -1,8 +1,52 @@
 h1 {
   /* color:blue; */
-  font-size: 120pt;
+  font-size: 100px;
+  color: blue;
+  text-align: center;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  text-shadow: 3px 2px yellow;
 }
 
 img {
-  height:10%;
+  border-radius: 50%;
+  margin-left: 0vw;
+  margin-top: 30vh;
+  margin-right: 0px;
+}
+
+.big {}
+
+body {
+  font-size: 1.25rem;
+  font-family: sans-serif;
+  line-height: 150%;
+  text-shadow: 0 2px 2px #b6701e;
+}
+
+div {
+  height: 100%;
+}
+
+#container {
+  width: 100%;
+}
+
+.left {
+  position: absolute;
+  left: 0px;
+  width: 50vw;
+  height: 80vh;
+  padding: 70px 0;
+  /* border: 3px solid blue; */
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 50vw;
+  height: 80vh;
+  /* border: 3px solid green; */
 }
