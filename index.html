@@ -1,49 +1,230 @@
-<!-- 告訴瀏覽器是HTML5 -->
 <!DOCTYPE html>
-<!-- 選擇語言 -->
 <html lang="zh-tw">
 
 <head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- 相容性 告訴你盡量不要用IE用EDGE -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>謝君模個人履歷</title>
-
+  <meta charset="utf-8">
+  <title>Morris Resume</title>
+  <!-- BOOT ONLINE -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- 自己寫的要放在BOOT的後面 -->
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/table.css">
-
-  <!-- bootstrap -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 </head>
 
 <body>
+  <!-- nav bar on top -->
+  <nav class="nav" id="topnavbar">
+    <a class="navbar-brand"><img src="" width="100" height="30" class="d-inline-block align-top" alt=""></a>
+    <a class="nav-link" href="#">About</a>
+    <a class="nav-link" href="#">Education</a>
+    <a class="nav-link" href="#">Current Work</a>
+    <a class="nav-link" href="#">Experience</a>
+  </nav>
 
-  <!-- ONE BOX -->
-  <div>
-    <!-- LEFT -->
-    <div class="right">
+  <!-- background section -->
+  <div id="bgfix">
+  </div>
 
-      <h1 class="big">謝君模的個人履歷</h1>
+  <!-- container contains a lot of garbages -->
+  <div class="container" id="middle_container">
 
-      <ul class="middle-left">PRACTICE
-        <li><a href="http://www.google.com" target="_blank">我是帥哞</a></li>
-        <li>練習一<a href="./table.html" target="_blank">課表</a></li>
+    <!-- 1. Main page -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Morris Hsieh</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png"  id="icon"> &nbsp Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png"   id="icon"> &nbsp Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png"   id="icon"> &nbsp Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon"> &nbsp Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon"> &nbsp Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
       </ul>
-
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
     </div>
-    <!-- RIGHT -->
-    <div class="left">
-      <div class="flow">
-        <img src="./img/ntu.jpg" alt="Too Handsome To Be Seen" height="800px">
-        <img src="./img/me'.jpg" alt="Too Handsome To Be Seen" height="800px">
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log" alt="">
       </div>
     </div>
+
+    <!-- 2. About me -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">About me</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <hr class="my-4">
+      <!-- <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log_inverse" alt="">
+      </div>
+    </div>
+
+    <!-- 3. Education -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Education</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <hr class="my-4">
+      <!-- <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log" alt="">
+      </div>
+    </div>
+
+    <!-- 4. Experience -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Experience</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <!-- <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log_inverse" alt="">
+      </div>
+    </div>
+
+    <!-- 5. Skills -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Skills</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <!-- <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log" alt="">
+      </div>
+    </div>
+
+    <!-- 6. Software & Language -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Software & Language</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <!-- <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log_inverse" alt="">
+      </div>
+    </div>
+
+    <!-- 7. Honor & Award -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Honor & Award</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <!-- <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <!--##### connect div #####-->
+    <div class="">
+      <div id="connect" >
+        <img src="./img/log.png" id="log" alt="">
+      </div>
+    </div>
+
+    <!-- 8. Interest -->
+    <div class="jumbotron" id="main_page">
+      <h1 class="display-4" id="word_title">Interest</h1>
+      <!-- <p class="lead" id="word_text"></p> -->
+      <!-- <hr class="my-4">
+      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+
+      <ul id="main_ul" >
+        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
+        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
+        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
+        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
+        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
+      </ul> -->
+      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+
   </div>
 
 
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

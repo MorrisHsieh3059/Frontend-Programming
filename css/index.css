@@ -1,52 +1,97 @@
-h1 {
-  /* color:blue; */
-  font-size: 100px;
-  color: blue;
-  text-align: center;
-
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  word-spacing: 10px;
-  text-shadow: 3px 2px yellow;
-}
-
-img {
-  border-radius: 50%;
-  margin-left: 0vw;
-  margin-top: 30vh;
-  margin-right: 0px;
-}
-
-.big {}
-
 body {
-  font-size: 1.25rem;
-  font-family: sans-serif;
-  line-height: 150%;
-  text-shadow: 0 2px 2px #b6701e;
+  font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+  background-color: #d4e6e6;
 }
 
-div {
-  height: 100%;
+#middle_container {
+  position: absolute;
+  left: 20vw;
+  right: 20vw;
+  top: 25vh;
+  width: 60vw;
+  margin: unset; /* 外面的盒子不要邊界 */
 }
 
-#container {
+#bgfix {
+  background-image: url(../img/castle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 85vh;
   width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-.left {
-  position: absolute;
-  left: 0px;
-  width: 50vw;
-  height: 80vh;
-  padding: 70px 0;
-  /* border: 3px solid blue; */
+#word_title {
+  font-family: 'Fira Sans',sans-serif;
+  font-weight: 800;
+  font-size: 5vh;
+  font-style: normal;
+  font-feature-settings: "smcp", "zero";
 }
 
-.right {
-  position: absolute;
-  right: 0px;
-  width: 50vw;
-  height: 80vh;
-  /* border: 3px solid green; */
+#word_text {
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+#word_ul {
+  font-weight: normal;
+  font-size: 3vh;
+  color: #000000c4;
+}
+/* Part I */
+#topnavbar {
+    background-size: cover;
+    padding-top: 4px;
+    padding-bottom: 1%;
+    /* box-shadow: 1px 1px 1px rgba(40%,40%,60%,0.1),
+                1px 1px 2px rgba(40%,40%,60%,0.1),
+                2px 2px 3px rgba(20%,20%,40%,0.4); */
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    color: brown;
+    font-size: 3vh;
+    padding-bottom: 2px;
+}
+
+
+/* Part II : main page */
+#icon {
+  height: 3vh;
+}
+
+#main_ul {
+  list-style-type: none;
+}
+
+#main_page {
+  width: 60vw;
+  border-radius: 1rem;
+  border-collapse: collapse;
+  box-shadow: 9px 9px 20px 1px #1f4b60;
+  margin-bottom: 0;
+}
+
+/* Part II : connect */
+#connect {
+  display: flex;
+  justify-content: center;
+}
+
+#log {
+  height: 10vh;
+}
+
+#log_inverse {
+  height: 10vh;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
