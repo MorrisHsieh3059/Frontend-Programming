@@ -3,6 +3,10 @@ body {
   background-color: #d4e6e6;
 }
 
+#blank_page {
+  height: 20vh;
+}
+
 #middle_container {
   position: absolute;
   left: 15vw;
