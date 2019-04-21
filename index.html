@@ -1,298 +1,1412 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
-<head>
-  <meta charset="utf-8">
-  <title>Morris Resume</title>
-  <!-- BOOT ONLINE -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- 自己寫的要放在BOOT的後面 -->
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="Shortcut Icon" type="image/x-icon" href="./img/me'.jpg">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
-
-<body>
-  <!-- nav bar on top -->
-  <nav class="nav" id="topnavbar">
-    <a class="navbar-brand"><img src="" width="100" height="30" class="d-inline-block align-top" alt=""></a>
-    <!-- All the hrefs  -->
-    <a class="nav-link" href="#About_section">About</a>
-    <a class="nav-link" href="#Education_section">Education</a>
-    <a class="nav-link" href="#Experience_section">Experience</a>
-    <a class="nav-link" href="#Skills_section">Skill</a>
-    <a class="nav-link" href="#Language_section">Language</a>
-    <a class="nav-link" href="#Honors_section">Honors</a>
-    <a class="nav-link" href="#Interest_section">Interest</a>
-  </nav>
-
-  <!-- background section -->
-  <div id="bgfix">
-  </div>
-
-  <!-- container contains a lot of garbages -->
-  <div class="container" id="middle_container">
-
-    <!-- 1. Main page -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Morris Hsieh</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
-
-      <ul id="main_ul">
-        <li id="word_ul"><img src="./img/name.png" id="icon"> &nbsp Full Name: Morris Chun-Mo Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png" id="icon"> &nbsp Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png" id="icon"> &nbsp Current Job: Undergraduate</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon"> &nbsp Phone: <a class="mobilesOnly" href="tel:886928015156">(+886) 928 015 156</a></li>
-        <li id="word_ul"><img src="./img/email.png" id="icon"> &nbsp Email: <a href="mailto:b06303059@ntu.edu.tw">b06303059@ntu.edu.tw</a></li>
-      </ul>
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
-
-    <!--##### connect div #####-->
-    <div id="About_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
-
-    <!-- 2. About me -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">About me</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <hr class="my-4">
-    </div>
-
-    <!--##### connect div #####-->
-    <div id="Education_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
-
-    <!-- 3. Education -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Education</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <hr class="my-4">
-
-      <!-- 3.1. Timeline -->
-      <div id="timeline_body">
-        <div class="timeline">
-
-          <div class="container_time left">
-            <div class="content">
-              <h2 id="title_edu">2017</h2>
-              <hr class="my-1">
-              <p id="text_edu">Dept of Economics, National Taiwan University</p>
-              <!-- Icon with href and fade hovering -->
-              <div class="edu_icon">
-                <a href="http://www.econ.ntu.edu.tw/">
-                  <img src="./img/ntu.jpg" class="round_img" alt="">
-                  <div class="fade">
-                  </div>
-                </a>
-              </div>
-              <p id="small_edu">b06303059</p>
-            </div>
-          </div>
-
-          <div class="container_time right">
-            <div class="content">
-              <h2 id="title_edu">2014</h2>
-              <hr class="my-1">
-              <p id="text_edu">Taipei Municipal Jian-guo High School</p>
-              <!-- Icon with href and fade hovering -->
-              <div class="edu_icon">
-                <a href="https://www2.ck.tp.edu.tw/">
-                  <img src="./img/ckhs.png" class="round_img" alt="">
-                  <div class="fade">
-                  </div>
-                </a>
-              </div>
-              <p id="small_edu">11837 / 20740 / 30740</p>
-            </div>
-          </div>
-
-          <div class="container_time left">
-            <div class="content">
-              <h2 id="title_edu">2011</h2>
-              <hr class="my-1">
-              <p id="text_edu">Taipei Municipal Zhong-Zheng Junior High School</p>
-              <!-- Icon with href and fade hovering -->
-              <div class="edu_icon">
-                <a href="http://www.ccjhs.tp.edu.tw/">
-                  <img src="./img/zzjs.png" class="round_img" alt="">
-                  <div class="fade">
-                  </div>
-                </a>
-              </div>
-              <p id="small_edu">71738 / 81738 / 91738</p>
-            </div>
-          </div>
-
-          <div class="container_time right">
-            <div class="content">
-              <h2 id="title_edu">2005</h2>
-              <hr class="my-1">
-              <p id="text_edu">Dahu Elementary School</p>
-              <!-- Icon with href and fade hovering -->
-              <div class="edu_icon">
-                <a href="http://www.dhps.tp.edu.tw/">
-                  <img src="./img/dhps.jpg" class="round_img" alt="">
-                  <div class="fade">
-                  </div>
-                </a>
-              </div>
-              <p id="small_edu">1090X / 2090X / 30X05<br>40X05 / 50607 / 60607</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-    <!--##### connect div #####-->
-    <div id="Experience_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
+		<title>Morris Resume</title>
 
-    <!-- 4. Experience -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Experience</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <!-- <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
+		<!-- BOOT ONLINE -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- CSS Stylesheets -->
+		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/linea.css' >
+		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
+		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-      <ul id="main_ul" >
-        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
-        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
-      </ul> -->
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
+	</head>
 
 
-    <!--##### connect div #####-->
-    <div id="Skills_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
-
-    <!-- 5. Skills -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Skills</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <!-- <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
-
-      <ul id="main_ul" >
-        <li id="word_ul"><img src="./img/name.png" id="icon">    Full Name: Morris Chun-Mo, Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png" id="icon">     Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png" id="icon">     Current Job</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon">     Phone: (+886) 928 015 156</li>
-        <li id="word_ul"><img src="./img/email.png" id="icon">    Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
-      </ul> -->
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
+	<body>
 
 
-    <!--##### connect div #####-->
-    <div id="Language_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
+		<!-- 1. Preloader -->
+		<div id='preloader' >
+			<div class='loader' ></div>
+			<div class='left' ></div>
+			<div class='right' ></div>
+		</div>
 
-    <!-- 6. Software & Language -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Software & Language</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <!-- <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
 
-      <ul id="main_ul" >
-        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
-        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
-      </ul> -->
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
+		<div class='main-content' >
 
-    <!--##### connect div #####-->
-    <div id="Honors_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
-
-    <!-- 7. Honor & Award -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Honor & Award</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <!-- <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
-
-      <ul id="main_ul" >
-        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
-        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
-      </ul> -->
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
-
-    <!--##### connect div #####-->
-    <div id="Interest_section">
-      <div id="connect">
-        <img src="./img/log.png" id="log" alt="">
-      </div>
-    </div>
-
-    <!-- 8. Interest -->
-    <div class="jumbotron" id="main_page">
-      <h1 class="display-4" id="word_title">Interest</h1>
-      <!-- <p class="lead" id="word_text"></p> -->
-      <!-- <hr class="my-4">
-      <p id="word_text">This is Morris Hsieh. A 20-year-old sophomore of NTU.</p>
-
-      <ul id="main_ul" >
-        <li id="word_ul"><img src="./img/name.png"  id="icon"> Full Name: Morris Chun-Mo, Hsieh</li>
-        <li id="word_ul"><img src="./img/age.png"   id="icon"> Age: 20</li>
-        <li id="word_ul"><img src="./img/job.png"   id="icon"> Current Job</li>
-        <li id="word_ul"><img src="./img/phone.png" id="icon"> Phone: (+886) 928 015 156</li>
-        <li id="word_ul"><img src="./img/email.png" id="icon"> Email: <a href=" href="mailto:b06303059@ntu.edu.tw"">b06303059@ntu.edu.tw</a></li>
-      </ul> -->
-      <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
-
-    <!-- Blank Page -->
-    <div class="container" id="blankpage">
-    </div>
-
-  </div>
+			<!-- 2. Page Borders -->
+			<div class='page-border border-left' ></div>
+			<div class='page-border border-right' ></div>
+			<div class='page-border border-top' ></div>
+			<div class='page-border border-bottom' ></div>
 
 
 
+			<!-- 3. Menu Button -->
+			<a href='#' class='menu-btn' >
+				<span class='lines' >
+					<span class='l1' ></span>
+					<span class='l2' ></span>
+					<span class='l3' ></span>
+				</span>
+			</a>
+
+
+			<!-- 4. Menu -->
+			<div class='menu' >
+				<div class='inner' >
+					<ul class='menu-items' >
+
+						<li><a href='#' class='section-toggle' data-section='intro' >
+								Home
+						</a></li>
+
+						<li><a href='#about' class='section-toggle' data-section='about' >
+								About
+						</a></li>
+
+						<li><a href='#resume' class='section-toggle' data-section='resume' >
+								Resume
+						</a></li>
+
+						<li><a href='#portfolio' class='section-toggle' data-section='portfolio' >
+								Gallery
+						</a></li>
+
+						<li><a href='#contact' class='section-toggle' data-section='contact' >
+								Contact
+						</a></li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class='animation-block' ></div>
+
+
+			<!-- 5. Sections -->
+			<div class='sections' >
+
+				<!-- 5.1. Main Section -->
+				<section id='intro' class='section section-main active' >
+					<div class='container-fluid' >
+						<div class='v-align' >
+							<div class='inner' >
+								<div class='intro-text' >
+									<h1>This is Morris Hsieh</h1>
+									<p>A 20-year-old Economics Student</p>
+
+									<div class='intro-btns' >
+										<a href='#about' class='btn-custom section-toggle' data-section='about' >
+											Discover me
+										</a>
+
+										<a href='#contact' class='btn-custom section-toggle' data-section='contact' >
+											Contact me
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- 5.2. About Section -->
+				<section id='about' class='section about-section border-d' >
+
+					<div class='section-block about-block' >
+						<div class='container-fluid' >
+
+							<div class='section-header' >
+								<h2>
+									I'm a <strong class='color' >Student</strong> <br>
+									major in Economics,
+									National Taiwan University
+								</h2>
+							</div>
+							<div class='row' >
+
+								<div class='col-md-4' >
+									<ul class='info-list' >
+										<li>
+											<strong>Name:</strong>
+											<span>Morris</span>
+										</li>
+
+										<li>
+											<strong>Currency Job:</strong>
+											<span>Undergraduate</span>
+										</li>
+
+										<li>
+											<strong>Age:</strong>
+											<span>20 Years Old</span>
+										</li>
+
+										<li>
+											<strong>Residence:</strong>
+											<span>Taipei, ROC</span>
+										</li>
+									</ul>
+								</div>
+
+								<div class='col-md-8' >
+
+									<div class='about-text' >
+										<p>
+											This is Morris Hsieh, my full name is Chun-Mo Hsieh.
+											I am a sophomore of Department of Economics, National
+											Taiwan University. My current job is a student, a co-worker
+											of Chatbot Team(working with Bourbon Kung & Wayne Ho), a
+											member of Peculab(National Taiwan University), and
+											a member of Diana's Lab(National Taiwan University of Science
+											and Technology). My current core research fields are Microeconnomics,
+											Macroeconomics, Econometrics and Programming(Python, Java,
+											Frontend).
+										</p>
+
+										<p>
+											If you are curious about me, welcome to find me out in
+											following contents. All feedback is honored and please
+											contact with me!
+										</p>
+
+									</div>
+
+									<div class='about-btns' >
+
+										<a href='#' class='btn-custom btn-color' >
+											Download Resume
+										</a>
+
+										<a href='#' class='btn-custom btn-color' >
+											Hire Me
+										</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class='section-block services-block' >
+						<div class='container-fluid' >
+							<div class='section-header' >
+
+								<h2>My <strong class='color' >Services</strong></h2>
+
+							</div>
 
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+							<div class='row' >
 
+								<div class='col-md-4' >
+									<div class='service' >
+
+										<div class='icon' >
+											<i class='icon-basic-photo' ></i>
+										</div>
+
+										<div class='content' >
+
+											<h4>Photography</h4>
+
+											<p>
+												Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+											</p>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class='col-md-4' >
+									<div class='service' >
+
+										<div class='icon' >
+											<i class='icon-basic-keyboard' ></i>
+										</div>
+
+										<div class='content' >
+
+											<h4>Programming</h4>
+
+											<p>
+												Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+											</p>
+
+										</div>
+
+									</div>
+								</div>
+
+								<div class='col-md-4' >
+									<div class='service' >
+
+										<div class='icon' >
+											<i class='ion-social-wordpress-outline' ></i>
+										</div>
+
+										<div class='content' >
+
+											<h4>WordPress</h4>
+
+											<p>
+												Ei constituam theophrastus per, sea dolorum disputationi in, vel menandri suavitate similique in. Vide assum conceptam eum.
+											</p>
+
+										</div>
+
+									</div>
+								</div>
+
+
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+					<div class='section-block skills-block' >
+						<div class='container-fluid' >
+
+							<div class='section-header' >
+								<h2>My <strong class='color' >Skills</strong></h2>
+							</div>
+
+							<div class='row' >
+
+								<!-- First Row -->
+								<div class='col-md-6' >
+
+									<!-- 1. skill-1 -->
+									<div class='skill' >
+										<h4>Economics</h4>
+										<div class='bar' >
+											<div class='percent' style='width:70%;' ></div>
+										</div>
+									</div>
+
+									<!-- 2. skill-2 -->
+									<div class='skill' >
+										<h4>Econometrics</h4>
+										<div class='bar' >
+											<div class='percent' style='width:65%;' ></div>
+										</div>
+									</div>
+
+									<!-- 3. skill-3 -->
+									<div class='skill' >
+										<h4>Python</h4>
+										<div class='bar' >
+											<div class='percent' style='width:75%;' ></div>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- Second Row -->
+								<div class='col-md-6' >
+
+									<!-- 4. skill-4 -->
+									<div class='skill' >
+										<h4>Java</h4>
+										<div class='bar' >
+											<div class='percent' style='width:40%;' ></div>
+										</div>
+									</div>
+
+									<!-- 5. skill-5 -->
+									<div class='skill' >
+										<h4>Word/Powerpoint/Excel</h4>
+										<div class='bar' >
+											<div class='percent' style='width:90%;' ></div>
+										</div>
+									</div>
+
+									<!-- 6. skill-6 -->
+									<div class='skill' >
+										<h4>Communication</h4>
+										<div class='bar' >
+											<div class='percent' style='width:80%;' ></div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
+					<div class='section-block pricing-block' >
+
+						<div class='section-header' >
+							<h2>My <strong class='color' >Pricing</strong></h2>
+						</div>
+
+
+						<div class='row' >
+
+							<div class='col-md-4' >
+
+								<div class='p-table' >
+
+									<div class='header' >
+
+										<h4>Basic</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >19</span>
+											<span class='period' >/HR</span>
+										</div>
+
+
+									</div>
+
+									<ul class='items' >
+										<li>
+											App Designing
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Web Development
+										</li>
+									</ul>
+
+									<a href='#' class='btn-custom btn-color' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-4' >
+
+								<div class='p-table' >
+
+									<div class='header' >
+
+										<h4>Pro</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >29</span>
+											<span class='period' >/HR</span>
+										</div>
+
+
+									</div>
+
+									<ul class='items' >
+										<li>
+											App Designing
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Web Development
+										</li>
+									</ul>
+
+									<a href='#' class='btn-custom btn-color' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+							<div class='col-md-4' >
+
+								<div class='p-table' >
+
+									<div class='header' >
+
+										<h4>Gold</h4>
+
+										<div class='price' >
+											<span class='currency' >$</span>
+											<span class='amount' >39</span>
+											<span class='period' >/HR</span>
+										</div>
+
+
+									</div>
+
+									<ul class='items' >
+										<li>
+											App Designing
+										</li>
+										<li>
+											App Development
+										</li>
+										<li>
+											Web Development
+										</li>
+									</ul>
+
+									<a href='#' class='btn-custom btn-color' >
+										Choose This
+									</a>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+				</section>
+
+
+				<!-- Resume Section -->
+				<section id='resume' class='section resume-section border-d' >
+
+					<!-- My Education -->
+					<div class='section-block timeline-block' >
+						<div class='container-fluid' >
+
+
+							<div class='section-header' >
+								<h2>My <strong class='color' >Education</strong></h2>
+							</div>
+
+							<ul class='timeline' >
+
+								<!-- 1. Bachelor -->
+								<li>
+									<div class='timeline-content' >
+
+										<h4>Department of Economics, National Taiwan University</h4>
+
+										<em>
+											<span id="span_title">
+												Bachelor Degree(Expected in 2022)
+											</span>
+										</em>
+
+										<p>
+											Duration: 2017 ~ <br>
+											Student ID: B06303059 <br>
+											Description: National Taiwan University ranks at the top
+											among all colleges in Republic of China.
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 2. High School -->
+								<li>
+									<div class='timeline-content' >
+										<h4>Taipei Municipal Jian-guo High School</h4>
+
+										<em>
+										<span id="span_title">
+											High School
+										</span>
+										</em>
+
+										<p>
+											Duration: 2014 ~ 2017 <br>
+											Student ID : 10300752<br>
+											Class-No : 118-37; 207-40; 307-40<br>
+											Description : This is the top high school of Taiwan.
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 3. Junior High School -->
+								<li>
+									<div class='timeline-content' >
+										<h4>Taipei Municipal Zhong-Zheng Junior High School</h4>
+
+										<em>
+										<span id="span_title">
+											Junior High School
+										</span>
+										</em>
+
+										<p>
+											Duration: 2011 ~ 2014 <br>
+											Class-No : 717-38; 817-38; 917-38<br>
+											Description : This is the top junior high school of Taipei.
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 4. Elementary School -->
+								<li>
+									<div class='timeline-content' >
+										<h4>Dahu Elementary School</h4>
+
+										<em>
+										<span id="span_title">
+											Elementary School
+										</span>
+										</em>
+
+										<p>
+											Duration: 2005 ~ 2011 <br>
+											Class-No : 109-0X, 2090X, 30X05, 40X05, 50607, 60607 <br>
+											Description : This is the tranquil school near to the
+																		mountain, fills with the smell of nature.
+										</p>
+
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+					<!-- My Experience -->
+					<div class='section-block timeline-block' >
+						<div class='container-fluid' >
+							<div class='section-header' >
+								<h2>My <strong class='color' >Experience</strong></h2>
+							</div>
+
+							<ul class='timeline' >
+
+								<!-- 1. Intership(2018) -->
+								<li>
+									<div class='timeline-content' >
+
+										<h4>Sinovation Venture</h4>
+
+										<em>
+											<span id="span_title">Internship</span>
+										</em>
+
+										<p>
+											Duration: July 2018 ~ August 2018 <br>
+											Department : Operation department, AI Institute, Sinovation Venture <br>
+											Job : A team assisting the operation of the activity, Deecamp, organized
+														by Sinovation Venture, co-organized by Peiking University
+														and Ministry of Education	of the People's Republic of China.
+														There are four members of this team and the activity
+														consists of 300 students(from BA to PhD).
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 2. Trade Mission(2016) -->
+								<li>
+									<div class='timeline-content' >
+
+										<h4>Trade Mission in Europe</h4>
+
+										<em>
+											<span id="span_title">Member</span>
+										</em>
+
+										<p>
+											Duration: 2016 Spring <br>
+											Organizer : TAITRA Taiwan Office <br>
+											Members : 40+ representatives of each Company <br>
+											Location : Rubijana (Slovenia), Warsaw (Poland), Prague (Czech Rep.)
+											, Olso (Norway), St. Petersburg (Russian Federation)
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 3. Acedemic Exchange btw China, Taiwan, Hong Kong and Macau -->
+								<li>
+									<div class='timeline-content' >
+
+										<h4>Acedemic Exchange between China, TWN, H.K. & Macau</h4>
+
+										<em>
+											<span id="span_title">Member</span>
+										</em>
+
+										<p>
+											Duration: 2015 Fall <br>
+											Organizer : Taipei Chengkung Senior High School & Si-Chuan Yibin Third School <br>
+											Core Members : 12 Taipei Students, 6 Sichuan Students. <br>
+											Location : Chong-Ching City, Cheng-Du & Yibin (Si-Chuan)
+										</p>
+
+									</div>
+								</li>
+
+								<!-- 4. Trade Mission(2015) -->
+								<li>
+									<div class='timeline-content' >
+
+										<h4>Trade Mission in Europe</h4>
+
+										<em>
+											<span id="span_title">Member</span>
+										</em>
+
+										<p>
+											Duration: 2015 Spring <br>
+											Organizer : TAITRA Taiwan Office <br>
+											Members : 50+ representatives of each Company <br>
+											Location : St. Petersburg (Russian Federation), Helzinki
+											(Finland), Tallinn (Estonia), Stockholm (Sweden), Warsaw(Poland)
+										</p>
+
+									</div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+					<!-- My Honor -->
+					<div class='section-block testimonials-block' >
+
+						<div class='container-fluid' >
+							<div class='section-header' >
+								<h2>My <strong class='color' >Honor</strong></h2>
+							</div>
+
+							<div class='testimonials-slider' >
+
+								<!-- 1. Honor-1 -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class="fas fa-award"></i>
+									</div>
+									<!-- (ii) description -->
+									<p id="p_title">
+										Book Award of 2018 Fall (107-1)
+									</p><p>
+										This award is granted to the top 5% of the students in the department.
+									</p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4>Department of Econoics</h4>
+										<span> National Taiwan University</span>
+									</div>
+								</div>
+
+								<!-- 2. Honor-2 -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class='fas fa-award' ></i>
+									</div>
+									<!-- (ii) description -->
+									<p id="p_title">
+										Book Award of 2017 Spring (106-2)
+									</p><p>
+										This award is granted to the top 5% of the students in the department.
+									</p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4>Department of Econoics</h4>
+										<span> National Taiwan University</span>
+									</div>
+								</div>
+
+								<!-- 3. Honor-3 -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class='fas fa-award' ></i>
+									</div>
+									<!-- (ii) description -->
+									<p id="p_title">
+										Book Award of 2017 Fall (106-1)
+									</p><p>
+										This award is granted to the top 5% of the students in the department.
+									</p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4>Department of Econoics</h4>
+										<span> National Taiwan University</span>
+									</div>
+								</div>
+
+								<!-- 4. Honor-4 -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class="fas fa-trophy"></i>
+									</div>
+									<!-- (ii) description -->
+									<p id="p_title">
+										Taipei City Government Certificate of Excellence (2017 High school)
+									</p><p>
+										This award is granted to 10 students of extraordinary
+										performance in academic and coutesy of each high school.
+										It is also known as	Mayor's award for that the grantor is the
+										incumbent Mayor.
+									</p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4>Mayor Ko, Wen-Je</h4>
+										<span>Taipei City</span>
+									</div>
+								</div>
+
+								<!-- 5. Honor-5 -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class='fas fa-trophy' ></i>
+									</div>
+									<!-- (ii) description -->
+									<p id="p_title">
+										Taipei City Government Certificate of Excellence (2014 Jr. High school)
+									</p><p>
+										This award is granted to the top student of each class in each
+										junior high school who exhibits the	extraordinary performance
+										in academic and coutesy. It is also known as	Mayor's award for
+										that the grantor is the incumbent Mayor.
+									</p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4>Mayor Hau, Lung-pin</h4>
+										<span>Taipei City</span>
+									</div>
+								</div>
+
+								<!-- 因為要顯示個頁面根據下面的bar，所以奇數要補一個 -->
+								<!-- example -->
+								<div class='testimonial' >
+									<!-- (i) icon -->
+									<div class='icon' >
+										<i class="" ></i>
+									</div>
+									<!-- (ii) description -->
+									<p> </p>
+									<!-- (iii) authority -->
+									<div class='author' >
+										<h4></h4>
+										<span></span>
+									</div>
+								</div>
+								<!-- end of eg -->
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<!--=====================================================
+					Portfolio(Gallery) Section
+				=====================================================-->
+				<section id='portfolio' class='section portfolio-section border-d' >
+					<div class='section-block portfolio-block' >
+						<div class='container-fluid' >
+							<!-- 1. title -->
+							<div class='section-header' >
+								<h2>My <strong class='color' >Gallery</strong></h2>
+							</div>
+							<!-- 2. menu bar -->
+							<ul class='portfolio-filters' >
+								<li><a href='#' class='active' data-group='all' >All</a></li>
+								<li><a href='#' data-group='edu' >Education</a></li>
+								<li><a href='#' data-group='exp' >Experience</a></li>
+								<li><a href='#' data-group='etc' >Others</a></li>
+							</ul>
+
+							<!-- 3. Photos -->
+							<ul class='portfolio-items' >
+
+								<!-- 3.1. first photo group -->
+								<li data-groups='["exp"]' >
+									<div class='inner' >
+										<img src='img/gallery/exp1_russ.JPG' alt>
+
+										<div class='overlay' >
+											<!-- 3.1.1 Popup -->
+											<a href='#popup-1' class='view-project' >View More</a>
+											<div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
+
+												<!-- 3.1.2 carousel -->
+												<div id="exp1" class="carousel slide" data-ride="carousel">
+													<!-- 3.1.2.1 Indicator -->
+										      <ol class="carousel-indicators">
+										        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+				        						<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+														<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+										      </ol>
+													<!-- 3.1.2.2 Carousel Items -->
+										      <div class="carousel-inner">
+
+										        <div class="carousel-item active">
+										          <img src="img/gallery/exp1_russ.JPG" class="d-block w-100" alt="Russia conference">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Trade fair in Russia</h5>
+										            <p>A B2B trade fair at St. Petersburg</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp1_nokia.JPG" class="d-block w-100" alt="Visit to Nokia">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Visit Nokia</h5>
+										            <p>The headquarter in Helzinki, Finland</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp1_ruvio.JPG" class="d-block w-100" alt="Visit to Rovio">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Visiting Rovio</h5>
+										            <p>The well-known Finnish video game developer</p>
+										          </div>
+										        </div>
+
+														<div class="carousel-item">
+										          <img src="img/gallery/exp1_estonia.JPG" class="d-block w-100" alt="Estonia Tarde Fair">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Estonia Tarde Fair</h5>
+										            <p>Held by Estonia Chamber of Commerse & Industry</p>
+										          </div>
+										        </div>
+
+														<div class="carousel-item">
+										          <img src="img/gallery/exp1_sweden.JPG" class="d-block w-100" alt="Hammarby Sjöstad">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Visit Hammarby Sjöstad</h5>
+										            <p>Guide by Head of Communications in GlashusEtt</p>
+										          </div>
+										        </div>
+
+										      </div>
+
+													<!-- 3.1.2.3 Arrow(Back and Forth) -->
+										      <a class="carousel-control-prev" href="#exp1" role="button" data-slide="prev">
+										        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Previous</span>
+										      </a>
+										      <a class="carousel-control-next" href="#exp1" role="button" data-slide="next">
+										        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Next</span>
+										      </a>
+
+										    </div>
+
+												<!-- 3.1.3 Content -->
+												<div class='content' >
+													<!--project popup title-->
+													<h4>Trade Mission in Europe ('15)</h4>
+													<!--project popup description-->
+													<p>
+														The trip included St. Petersburg, Helzinki, Tallinn,
+														Stockholm, and Warsaw. For each city visited, TAITRA
+														held a business conference for each company.
+														The local companies would register for the desired member
+														and have a meeting around 30 mins. The average numbers
+														of registered companies of us is around 15. Thus, the
+														conference usually held for 8 hours. For the other
+														times, we visit the local businesses at different cities
+														, like Nokia, Rovio, etc.
+													</p>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- 3.2 second photo group -->
+								<li data-groups='["exp"]' >
+									<div class='inner' >
+										<img src='img/gallery/exp2_oslo.JPG' alt>
+
+										<div class='overlay' >
+											<a href='#popup-2' class='view-project' >View More</a>
+
+											<!--project popup-->
+											<div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
+												<!-- 3.1.2 carousel -->
+												<div id="exp2" class="carousel slide" data-ride="carousel">
+													<!-- 3.1.2.1 Indicator -->
+										      <ol class="carousel-indicators">
+										        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+										      </ol>
+													<!-- 3.1.2.2 Carousel Items -->
+										      <div class="carousel-inner">
+
+										        <div class="carousel-item active">
+										          <img src="img/gallery/exp2_oslo.JPG" class="d-block w-100" alt="Norway conference">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Trade fair in Norway</h5>
+										            <p>A B2B trade fair at Oslo</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp2_russia.JPG" class="d-block w-100" alt="Visit to Russia">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Banquet at St. petersburg</h5>
+										            <p>With Chinese International Economic Cooperation Association (CIECA)</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp2_poland.JPG" class="d-block w-100" alt="Visit to Poland">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Business Meeting at Warsaw</h5>
+										            <p>Taiwan-Poland Business Meeting</p>
+										          </div>
+										        </div>
+
+										      </div>
+
+													<!-- 3.1.2.3 Arrow(Back and Forth) -->
+										      <a class="carousel-control-prev" href="#exp2" role="button" data-slide="prev">
+										        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Previous</span>
+										      </a>
+										      <a class="carousel-control-next" href="#exp2" role="button" data-slide="next">
+										        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Next</span>
+										      </a>
+
+										    </div>
+
+												<div class='content' >
+
+													<!--project popup title-->
+													<h4>Trade Mission in Europe ('16)</h4>
+													<!--project popup description-->
+													<p>
+														The trip visited Rubijana, Prague, Warsaw, Oslo,
+														and St. Petersburg. There was a trade fair for each
+														city and meeted with 16 local companies on average.
+														At the rest of time, we visited the local sites,
+														meeted the local government, and had some banquets
+														with them.
+													</p>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- 3.3 -->
+								<li data-groups='["exp","edu"]' >
+									<div class='inner' >
+										<img src='img/gallery/exp3_1.JPG' alt>
+
+										<div class='overlay' >
+											<a href='#popup-3' class='view-project' >View More</a>
+
+											<!--project popup-->
+											<div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
+												<!-- 3.1.2 carousel -->
+												<div id="exp3" class="carousel slide" data-ride="carousel">
+													<!-- 3.1.2.1 Indicator -->
+										      <ol class="carousel-indicators">
+										        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+														<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+														<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+														<li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+										        <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+														<li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+										      </ol>
+													<!-- 3.1.2.2 Carousel Items -->
+										      <div class="carousel-inner">
+
+										        <div class="carousel-item active">
+										          <img src="img/gallery/exp3_1.JPG" class="d-block w-100" alt="Norway conference">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Acedemic Exchage</h5>
+										            <p>The big conference was held at Yibin Third School</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp3_2.JPG" class="d-block w-100" alt="Visit to Russia">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>In-class communication</h5>
+										            <p>We exchaged our experiences on study and life.</p>
+										          </div>
+										        </div>
+
+										        <div class="carousel-item">
+										          <img src="img/gallery/exp3_3.JPG" class="d-block w-100" alt="Visit to Poland">
+										          <div class="carousel-caption d-none d-md-block">
+										            <h5>Exchange Souvenirs</h5>
+										            <p>We exchanged the souvenirs of two schools</p>
+										          </div>
+										        </div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_4.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Conference</h5>
+																<p>Answering questions from Chinese students</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_6.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Giving Speech</h5>
+																<p>I introduced my school and Taiwan's features</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_5.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Preparing for show</h5>
+																<p>A cooperated show between CHN, TWN, H.K. & Macau</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_7.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Attend 2015 China Victory Day Parade</h5>
+																<p>In commemmoration of Anti-Facism (WWII)</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_8.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Banquet of 2015 China Victory Day</h5>
+																<p>With attendents of Ethnic Chinese in the globe</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_9.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Banquet of Acedemic Exchange</h5>
+																<p>With attendents from Yibin Third School</p>
+															</div>
+														</div>
+
+														<div class="carousel-item">
+															<img src="img/gallery/exp3_10.JPG" class="d-block w-100" alt="Visit to Poland">
+															<div class="carousel-caption d-none d-md-block">
+																<h5>Visit Wuliangye Yibin Co. Ltd.</h5>
+																<p>One of the most famous baijiu's  manufacturer</p>
+															</div>
+														</div>
+
+										      </div>
+
+													<!-- 3.1.2.3 Arrow(Back and Forth) -->
+										      <a class="carousel-control-prev" href="#exp3" role="button" data-slide="prev">
+										        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Previous</span>
+										      </a>
+										      <a class="carousel-control-next" href="#exp3" role="button" data-slide="next">
+										        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+										        <span class="sr-only">Next</span>
+										      </a>
+
+										    </div>
+
+												<div class='content' >
+
+													<!--project popup title-->
+													<h4>Acedemic Exchange between China, TWN, H.K. & Macau</h4>
+													<!--project popup description-->
+													<p>
+														This activity is organized by Taipei Chengkung High
+														School and Yibin Third School. It is aimed to
+														gather the students between two-traits, H.K. & Macau
+														to exchange the respective experiences and enhance the
+														interaction among ethnic Chinese. Besides, the activity
+														is linked with the 70-years anniversary of Victory
+														against Empire of Japan and other Axis powers.
+													</p>
+
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<!-- 3.4 -->
+								<li data-groups='["edu"]' >
+									<div class='inner' >
+										<img src='img/portfolio/4.jpg' alt>
+
+										<div class='overlay' >
+
+											<a href='#popup-4' class='view-project' >
+												View Project
+											</a>
+
+											<!--project popup-->
+											<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide' >
+												<figure>
+
+													<!--project popup image-->
+													<img src='img/portfolio/4.jpg' alt>
+
+												</figure>
+												<div class='content' >
+
+													<!--project popup title-->
+													<h4>My Project Title</h4>
+
+													<!--project popup description-->
+													<p>
+														Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+													</p>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+								</li>
+
+								<!-- 3.5 -->
+								<li data-groups='["exp"]' >
+									<div class='inner' >
+										<img src='img/portfolio/5.jpg' alt>
+
+										<div class='overlay' >
+
+											<a href='#popup-5' class='view-project' >
+												View Project
+											</a>
+
+											<!--project popup-->
+											<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide' >
+												<figure>
+
+													<!--project popup image-->
+													<img src='img/portfolio/5.jpg' alt>
+
+												</figure>
+												<div class='content' >
+
+													<!--project popup title-->
+													<h4>My Project Title</h4>
+
+													<!--project popup description-->
+													<p>
+														Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+													</p>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+								</li>
+
+								<!-- 3.6 -->
+								<li data-groups='["etc"]' >
+									<div class='inner' >
+										<img src='img/portfolio/6.jpg' alt>
+
+										<div class='overlay' >
+
+											<a href='#popup-6' class='view-project' >
+												View Project
+											</a>
+
+											<!--project popup-->
+											<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide' >
+												<figure>
+
+													<!--project popup image-->
+													<img src='img/portfolio/6.jpg' alt>
+
+												</figure>
+												<div class='content' >
+
+													<!--project popup title-->
+													<h4>My Project Title</h4>
+
+													<!--project popup description-->
+													<p>
+														Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+													</p>
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+				</section>
+
+
+				<!--=====================================================
+					Contact Section
+				=====================================================-->
+				<section id='contact' class='section contact-section border-d' >
+
+					<div class='section-block contact-block' >
+
+						<div class='container-fluid' >
+
+							<div class='section-header' >
+								<h2>Contact <strong class='color' >Me</strong></h2>
+							</div>
+
+
+							<div class='row' >
+
+								<div class='col-md-8' >
+
+									<div class='contact-form' >
+
+										<form id='contact-form' data-toggle='validator' method='post' action='mail.php' >
+
+											<div id='contact-form-result' ></div>
+
+											<div class='row' >
+
+												<div class='col-md-6' >
+													<div class='form-group' >
+
+														<input type='text' class='form-control' placeholder='Name' name='name' required>
+														<div class='help-block with-errors' ></div>
+
+													</div>
+												</div>
+
+												<div class='col-md-6' >
+													<div class='form-group' >
+
+														<input type='email' class='form-control' placeholder='Email' name='email' required>
+														<div class='help-block with-errors' ></div>
+
+													</div>
+												</div>
+
+											</div>
+
+											<div class='form-group' >
+
+												<input type='text' class='form-control' placeholder='Subject' name='subject' required>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+
+											<div class='form-group' >
+
+												<textarea class='form-control' placeholder='Message' name='message' rows='5' required></textarea>
+												<div class='help-block with-errors' ></div>
+
+											</div>
+
+											<div class='form-group text-center' >
+												<button type='submit' class='btn-custom btn-color' >
+													Send Message
+												</button>
+											</div>
+
+										</form>
+
+									</div>
+
+
+								</div>
+
+								<div class='col-md-4' >
+
+									<div class='contact-info-icons' >
+
+										<div class='contact-info' >
+
+											<i class='ion-ios-location-outline' ></i>
+
+											<p>
+												1254 Patterson Street<br>
+												Houston, TX 77025
+											</p>
+
+										</div>
+
+
+										<div class='contact-info' >
+
+											<i class='ion-ios-telephone-outline' ></i>
+
+											<p>
+												(+123) 713-295-4383<br>
+												(+123) 913-295-2583
+											</p>
+
+										</div>
+
+
+										<div class='contact-info' >
+
+											<i class='ion-android-globe' ></i>
+
+											<p>
+												www.google.com<br>
+												www.example.com
+											</p>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<!--local JavaScript Files -->
+		<script src='js/jquery.min.js' ></script>
+		<script src='js/jquery.shuffle.min.js' ></script>
+		<script src='js/owl.carousel.min.js' ></script>
+		<script src='js/jquery.magnific-popup.min.js' ></script>
+		<script src='js/validator.min.js' ></script>
+		<script src='js/script.js' ></script>
+		<!-- Online sources -->
+		<!-- Popper.js, and Bootstrap JS(no need for jQuery) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
 </html>
