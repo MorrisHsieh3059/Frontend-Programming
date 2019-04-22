@@ -929,7 +929,43 @@ body.section-switching.up .animation-block{
 	opacity:1;
 }
 
+.edu_icon {
+  position: relative;
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+  margin-left: auto;
+}
 
+.round_img  {
+  display: block;
+  border-radius: 50%;
+  height: 10vh;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+/* Hover */
+.fade {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.edu_icon:hover .round_img {
+  opacity: 0.3;
+}
+
+.edu_icon:hover .fade {
+  opacity: 1;
+}
 
 
 /*=======================================================
@@ -1256,9 +1292,13 @@ body.section-switching.up .animation-block{
 		padding-left:30px;
 	}
 }
+#hrefcolor {
+	color: rgba(0,0,0,.4);
+}
 
-
-
+.contact-info > #contact-row {
+	height: 180px;
+}
 /*=======================================================
 	Preloader
 =======================================================*/
