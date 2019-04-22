@@ -764,6 +764,26 @@ body.section-switching.up .animation-block{
 	letter-spacing:2px;
 	color:rgba(0,0,0,.4);
 }
+.grade-info-list{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.grade-info-list > li{
+	padding:14px 0;
+	border-bottom:solid 1px rgba(0,0,0,.1);
+}
+.grade-info-list > li:last-of-type{
+	border:none;
+}
+
+.pricing-block > .row > .col-md-4 > .p-table > .grade-info-list> li {
+	text-align: left;
+	font-size: 16px;
+}
+.pricing-block > .row > .col-md-4 > .p-table > .grade-info-list> li > .gpa {
+	font-weight: bold;
+}
 
 
 
@@ -1229,6 +1249,7 @@ body.section-switching.up .animation-block{
 	color:rgba(0,0,0,.4);
 	margin:0;
 	margin-top:5px;
+	font-weight: bold;
 }
 @media(min-width:992px){
 	.contact-info-icons{
