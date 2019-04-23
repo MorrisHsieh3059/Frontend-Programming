@@ -1,5 +1,5 @@
 # Frontend-Programming
-    
+
 引用：   
 	1. https://www.free-css.com/free-css-templates/page237/n5    
 
@@ -28,6 +28,7 @@
 	2. 新增carousel  ：在Gallery那邊加入互動式的圖集   
 	3. hoverable icon：在resume加上可以連結到網頁的icon    
 	4. href          ：可以下載相關文件、寄送郵件、致電   
+  5. Shortcut Icon ：個人小戳記   
 
 備註：   
 	1. 有一個手刻板，從零開始，止於老師說要套模板的那天    
