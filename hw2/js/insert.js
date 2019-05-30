@@ -15,7 +15,7 @@ $(() => {
     }
 
     // 新增商品
-    $.post('https://js.kchen.club/B12345678/insert', data, function(response) {
+    $.post('https://js.kchen.club/B06303059/insert', data, function(response) {
         if (response) {
             // 伺服器有回傳資料
             if (response.result) {
