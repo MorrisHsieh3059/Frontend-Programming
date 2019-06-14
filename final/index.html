@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang='zh-TW'>
+
+<head>
+
+  <!-- import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- import openlayers -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+  <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+
+  <!-- import Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!-- semantic -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+  <title>2018 Referendum in Taiwan</title>
+  <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">
+          <a href="./intro.pdf"><h1>2018 Referendum in Taiwan    </h1></a>
+
+        </span>
+        <div class="mdl-layout-spacer"></div>
+        <span class="mdl-layout-title" id='network'>未連接至網路</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <!-- Your content goes here -->
+
+        <div class="ui grid">
+          <div class="one wide column"></div>
+          <!--------------------------------------------------->
+          <div class="five wide column" id='section1-1'>
+            <div>
+              <!------------------------------------------------------>
+              <br><span id="ins" >第一招：我要看大致走向 ── 從地圖戳</span><br>
+              <!------------------------------------------------------>
+              <br><span class='text'>Step 1. 自地圖選擇欲察看縣市</span><br>
+              <!------------------------------------------------------>
+              <br><span class='text'>Step 2. 選擇您想查看的公投案</span>
+              <form class='form' id='ref'>
+                <select name='ref' style="width:300px;" id='layer1' onchange='loadVill(1,1)'>
+                  <option value="none">-</option>
+                  　<option value="7">第七案： 反空汙公投</option>
+                  　<option value="8">第八案： 反深澳電廠</option>
+                  　<option value="9">第九案： 反核食</option>
+                  <option value="10">第十案： 婚姻定義</option>
+                  <option value="11">第十一案： 適齡性平教育</option>
+                  <option value="12">第十二案： 同性伴侶專法</option>
+                  <option value="13">第十三案： 東京奧運正名</option>
+                  　<option value="14">第十四案： 婚姻平權</option>
+                  <option value="15">第十五案： 性平教育</option>
+                  <option value="16">第十六案： 以核養綠</option>
+                </select>
+              </form>
+              <!------------------------------------------------------>
+              <br><span class='text'>Step 3. 選擇您想進行疊圖的公投案 (Opt)</span>
+              <form class='form'>
+                <select style="width:300px;" id='overlay' onchange='loadVill(2,2)'>
+                  <option value="none">-</option>
+                  <option value="7">第七案： 反空汙公投</option>
+                  　<option value="8">第八案： 反深澳電廠</option>
+                  　<option value="9">第九案： 反核食</option>
+                  <option value="10">第十案： 婚姻定義</option>
+                  <option value="11">第十一案： 適齡性平教育</option>
+                  <option value="12">第十二案： 同性伴侶專法</option>
+                  <option value="13">第十三案： 東京奧運正名</option>
+                  　<option value="14">第十四案： 婚姻平權</option>
+                  <option value="15">第十五案： 性平教育</option>
+                  <option value="16">第十六案： 以核養綠</option>
+                </select>
+              </form>
+              <!------------------------------------------------------>
+              <div style='padding-left: 18px; color: yellow'>
+              </div>
+              <div style='padding-left: 18px; color: yellow'>
+              </div>
+              <!------------------------------------------------------>
+              <br><span id="ins" >第二招：我要看詳細資料 ── 從表格找</span><br>
+              <!------------------------------------------------------>
+              <br><span class='text'>Step 1. 選擇您想查看的村里及公投案，查看該里詳細投票資訊</span>
+
+              <form class='form' id='show_table'><br>
+                <div>
+                  <select id='city' style="width:80px" onchange="changeCity(); condition()">
+                    <option value="none" selected>-</option>
+                    <option value="0">臺北市</option>
+                    <option value="1">基隆市</option>
+                    <option value="2">新北市</option>
+                    <option value="3">宜蘭縣</option>
+                    <option value="4">桃園市</option>
+                    <option value="5">新竹市</option>
+                    <option value="6">新竹縣</option>
+                    <option value="7">苗栗縣</option>
+                    <option value="8">臺中市</option>
+                    <option value="9">彰化縣</option>
+                    <option value="10">南投縣</option>
+                    <option value="11">嘉義市</option>
+                    <option value="12">嘉義縣</option>
+                    <option value="13">雲林縣</option>
+                    <option value="14">臺南市</option>
+                    <option value="15">高雄市</option>
+                    <option value="16">澎湖縣</option>
+                    <option value="17">金門縣</option>
+                    <option value="18">屏東縣</option>
+                    <option value="19">臺東縣</option>
+                    <option value="20">花蓮縣</option>
+                    <option value="21">連江縣</option>
+                  </select>&emsp;
+
+                  <select id='district' style="width:80px" onchange="loadVill(0); condition()">
+                    <option value="none" selected>-</option>
+                  </select>&emsp;
+
+                  <select id='village' style="width:80px" onchange="condition()">
+                    <option value="none" selected>-</option>
+                  </select>
+                </div><br>
+
+                <select id='ref2' style="width:300px" onchange="condition()">
+                  <option value="none" selected>-</option>
+                  　<option value="7">第七案： 反空汙公投</option>
+                  　<option value="8">第八案： 反深澳電廠</option>
+                  　<option value="9">第九案： 反核食</option>
+                  <option value="10">第十案： 婚姻定義</option>
+                  <option value="11">第十一案： 適齡性平教育</option>
+                  <option value="12">第十二案： 同性伴侶專法</option>
+                  <option value="13">第十三案： 東京奧運正名</option>
+                  　<option value="14">第十四案： 婚姻平權</option>
+                  <option value="15">第十五案： 性平教育</option>
+                  <option value="16">第十六案： 以核養綠</option>
+                </select>
+              </form><br>
+              <!------------------------------------------------------>
+              <div id="includedContent">
+                <table class="ui red table" id="table1">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!--------------------------------------------------->
+          <div class="ten wide column" id='section1-2'>
+            <div id="map" onmouseleave="del_interaction()" onmouseover="add_interaction()"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!------------------------------------------------------>
+    <!-- 基本資料 -->
+    <script src="js/request.js"></script> <!-- 介接所有資料，找出每個公投案的資料以及地圖 -->
+    <script type="text/javascript" src="js/district_data.js"></script> <!-- 放行政區劃資料 -->
+
+    <!-- 畫地圖 -->
+    <script src="js/index.js"></script>
+    <script src="js/draw.js"></script> <!-- 找到相對應比率的顏色 -->
+    <script src="js/callDraw.js"></script> <!-- 幫村里上顏色，判斷一層還兩層 -->
+    <script src="js/paint.js"></script> <!-- 把村里畫出來 -->
+
+    <!-- 寫入表格 -->
+    <script src="js/table.js"></script> <!-- 把村里結果塞進Table -->
+    <script src="js/vill.js"></script> <!-- 在下拉式選單中加入里 -->
+    <script src="js/condition.js"></script> <!-- 找出相對應的區域和公投案的結果 -->
+
+    <!-- 切換城市 -->
+    <script src="js/changeCity.js"></script> <!-- 改城市：換表格 / 戳地圖 -->
+
+
+
+  </div>
+</body>
+
+</html>

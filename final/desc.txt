@@ -1,0 +1,23 @@
+
+Final_Project
+      |──── semantic
+      |──── css
+      |      |──── index.css
+      |
+      |──── js
+      |   　 |
+      |   　 |──── request
+      |   　 |──── district_data
+      |   　 |
+      |   　 |──── index
+      |   　 |──── draw
+      |   　 |──── callDraw
+      |   　 |──── paint
+      |   　 |
+      |   　 |──── table
+      |   　 |──── vill
+      |   　 |──── condition
+      |   　 |
+      |   　 |──── changeCity.js
+      |
+      |──── index.html

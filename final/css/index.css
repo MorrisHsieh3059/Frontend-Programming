@@ -1,0 +1,52 @@
+body {
+  background-color: #808080;
+}
+#ins {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: '微軟正黑體';
+    color: khaki;
+}
+
+#map {
+  margin-top: 1vh;
+  margin-right: 0.45vw;
+  height: 105% ;
+}
+
+#section1-1{
+  height: 89vh;
+
+  position:relative;
+}
+
+#section1-2{
+  height: 89vh;
+  position:relative;
+}
+
+.title {
+  padding-left: 100px;
+  padding-right: 800px;
+}
+
+.text {
+  color: white;
+  font-weight: bold;
+  font-family: '微軟正黑體';
+}
+
+.form {
+  font-family: '微軟正黑體';
+}
+
+.mdl-layout__header-row{
+  background-color: black;
+}
+
+#includedContent {
+  width: 75%;
+}
+#network {
+  visibility: hidden;
+}
