@@ -1,5 +1,8 @@
 作業二：電商前端應用
 
+連結：             
+        https://morrishsieh3059.github.io/Frontend-Programming/hw2%20online%20shop/index.html
+
 1. 基本功能
 
 (a) 查詢所有商品    
